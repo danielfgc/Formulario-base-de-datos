@@ -12,26 +12,27 @@
   </head>
   <body>
     <h2>Crud Basico</h2>
+    <div class="container">
     <form method="get">
-    <div class="mb-3">
+    <div class="col-3">
   <label for="Título" class="form-label">Título</label>
   <input type="text" class="form-control" id="Título" name="Titulo">
 </div>
-<div class="mb-3">
+<div class="col-3">
   <label for="Autor" class="form-label">Autor</label>
   <input type="text" class="form-control" id="Autor" name="Autor">
 </div>
-<div class="mb-3">
+<div class="col-3">
   <label for="fecha" class="form-label">Fecha</label>
   <input type="date" class="form-control" id="fecha" name="Fecha">
 </div>
-<div class="mb-3">
+<div class="col-3">
   <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Desc"></textarea>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="Desc"></textarea>
 </div>
 <button type="submit" class="btn btn-primary mb-3">Publicar</button>
 </form>
-<table>
+<table class="table table-striped table-hover">
         <thead>
             <th>Id</th>
             <th>Titulo</th>
@@ -47,7 +48,7 @@
         $conexion -> verPubli();
         
     ?>
-
+</div>
 
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
